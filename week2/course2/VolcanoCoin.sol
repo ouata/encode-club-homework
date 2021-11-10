@@ -10,7 +10,7 @@ contract Volcano is ERC20 {
 
   uint private TOTAL_SUPPLY = 10000;
 
-  address private owner;
+  address private _owner;
   
   modifier OnlyOwner() {
       require (msg.sender == owner);
